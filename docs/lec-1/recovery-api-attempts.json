@@ -1,0 +1,20 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/issues/${PAPERCLIP_TASK_ID}",
+    "ok": false,
+    "error": "URLError: Connection refused"
+  },
+  {
+    "method": "POST",
+    "path": "/api/issues/${PAPERCLIP_TASK_ID}/comments",
+    "ok": false,
+    "error": "URLError: Connection refused"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/issues/${PAPERCLIP_TASK_ID}",
+    "ok": false,
+    "error": "URLError: Connection refused"
+  }
+]

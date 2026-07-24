@@ -1,0 +1,26 @@
+{
+  "issueIdentifier": "LEC-1",
+  "issueId": "${PAPERCLIP_TASK_ID}",
+  "companyId": "${PAPERCLIP_COMPANY_ID}",
+  "agentId": "${PAPERCLIP_AGENT_ID}",
+  "runId": "${PAPERCLIP_RUN_ID}",
+  "recoveryCause": "successful_run_missing_state",
+  "recoveryAttempt": 1,
+  "disposition": "blocked",
+  "recordedAt": "2026-07-24T09:04:13Z",
+  "blocker": {
+    "type": "paperclip_control_plane_unreachable",
+    "detail": "PAPERCLIP_API_URL localhost:3100 connection refused; PAPERCLIP_API_KEY missing",
+    "unblockOwner": "Board / Paperclip adapter ops",
+    "unblockAction": "Inject reachable PAPERCLIP_API_URL + API auth, then re-wake Cursor Cloud to run scripts/paperclip-sync-lec1-handoff.sh and scripts/paperclip-create-lec1-children.sh"
+  },
+  "verifiedArtifacts": {
+    "branch": "cursor/lec-1-login-scheme-optimize-2484",
+    "commit": "d4befdeab6e3a6ab79ae3e9cf120934344a46a34",
+    "primaryDoc": "docs/lec-1/optimized-login-management-design.md",
+    "priorAgent": "bc-3c1ef75a-bdca-4ca2-a372-489a8e652484"
+  },
+  "commentMarkdownPath": "docs/lec-1/recovery-comment.md",
+  "apiWriteAttempted": true,
+  "apiWriteSucceeded": false
+}
