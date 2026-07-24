@@ -1,0 +1,46 @@
+{
+  "issueIdentifier": "LEC-1",
+  "note": "Paperclip 控制面不可写时，用 workspace_file 作为耐久访问路径；解阻后改挂 attachment / document。",
+  "workProducts": [
+    {
+      "type": "document",
+      "name": "LEC-1 优化版登录管理方案",
+      "metadata": {
+        "resourceRef": {
+          "kind": "workspace_file",
+          "path": "docs/lec-1/optimized-login-management-design.md"
+        }
+      }
+    },
+    {
+      "type": "document",
+      "name": "方案 A interim 输入",
+      "metadata": {
+        "resourceRef": {
+          "kind": "workspace_file",
+          "path": "docs/lec-1/sources/scheme-a-auth-center-mvp.md"
+        }
+      }
+    },
+    {
+      "type": "document",
+      "name": "方案 B interim 输入",
+      "metadata": {
+        "resourceRef": {
+          "kind": "workspace_file",
+          "path": "docs/lec-1/sources/scheme-b-modular-user-center.md"
+        }
+      }
+    },
+    {
+      "type": "document",
+      "name": "待创建子任务定义",
+      "metadata": {
+        "resourceRef": {
+          "kind": "workspace_file",
+          "path": "docs/lec-1/pending-child-issues.json"
+        }
+      }
+    }
+  ]
+}

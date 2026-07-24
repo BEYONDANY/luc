@@ -1,0 +1,24 @@
+{
+  "note": "解阻后由 agent 执行 scripts/paperclip-create-lec1-children.sh 或等价 POST；parent 绑定 LEC-1。勿在缺附件时伪造官方方案内容。",
+  "parentIssueIdentifier": "LEC-1",
+  "parentIssueIdEnv": "PAPERCLIP_TASK_ID",
+  "idempotencyKeyPrefix": "lec-1:child:scheme-upload",
+  "children": [
+    {
+      "key": "scheme-a",
+      "title": "上传用户登录管理方案 A 附件",
+      "priority": "high",
+      "description": "请上传「用户登录管理」原始方案 A（文档/PDF/截图均可）。\n\n验收：附件可下载；在评论中注明方案简称与版本。\n完成后回到父任务 LEC-1，供对比与优化版复核。",
+      "desiredStatusAfterCreate": "todo",
+      "blockerRelation": "LEC-1 blocked_by this child until attachment present"
+    },
+    {
+      "key": "scheme-b",
+      "title": "上传用户登录管理方案 B 附件",
+      "priority": "high",
+      "description": "请上传「用户登录管理」原始方案 B（文档/PDF/截图均可）。\n\n验收：附件可下载；在评论中注明方案简称与版本。\n完成后回到父任务 LEC-1，供对比与优化版复核。",
+      "desiredStatusAfterCreate": "todo",
+      "blockerRelation": "LEC-1 blocked_by this child until attachment present"
+    }
+  ]
+}
